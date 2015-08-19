@@ -1,8 +1,24 @@
 Orion Context Explorer PHP Framework
 =============================
 #### PHP 5 framework for Orion Context Broker.
-
 This is the code repository for the Orion Context Explorer PHP Framework.
+
+##Publish/Subscribe Context Broker - Orion Context Broker
+
+- http://catalogue.fiware.org/enablers/publishsubscribe-context-broker-orion-context-broker
+- https://github.com/telefonicaid/fiware-orion
+
+
+The Orion Context Broker is an implementation of the Publish/Subscribe Context Broker GE, providing the NGSI9 and NGSI10 interfaces. Using these interfaces, clients can do several operations:
+- Register context producer applications, e.g. a temperature sensor within a room
+- Update context information, e.g. send updates of temperature
+- Being notified when changes on context information take place (e.g. the temperature has changed) or with a given frequency (e.g. get the temperature each minute)
+- Query context information. The Orion Context Broker stores context information updated from applications, so queries are resolved based on that information.
+
+Apart from Orion Context Broker, there are other related components that you may find useful, such as Cygnus or Orion PEP proxy. Cygnus implements a connector for context data coming from Orion Context Broker and aimed to be stored in a specific persistent storage, such as HDFS, CKAN or MySQL. Orion PEP is a proxy meant to secure Orion Context Broker, by intercepting every request sent to the Orion, validating it against the Access Control component.
+
+
+
 It's possible see the running implementation here:
 
 http://orionexplorer.com/
